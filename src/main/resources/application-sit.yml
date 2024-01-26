@@ -1,5 +1,9 @@
 
 spring:
+  security:
+    user:
+      name: ram	
+      password: ram
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://localhost:3306/wikimedia
