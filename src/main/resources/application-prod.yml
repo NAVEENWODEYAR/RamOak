@@ -5,3 +5,7 @@ server:
 spring:
   application:
     name: PROD
+  security:
+    user:
+      name: ram
+      password: ram 
