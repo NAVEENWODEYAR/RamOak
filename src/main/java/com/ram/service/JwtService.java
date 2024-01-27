@@ -14,7 +14,7 @@ import java.util.function.Function;
 
 @Component
 public class JwtService {
-    private static final String SECERET = "!@#$FDGSDFGSGSGSGSHSHSHSSHGFFDSGSFGSSGHSDFSDFSFSFSFSDFSFSFSF";
+    private static final String SECERET = "!@#$FDGSDFGSGSGSGSHSHSHSSHGFFDSGSFGSSGHSWDGGGFFFDDFSDFSFSFSFSDFSFSFSF";
 
     public String generateToken(String userName){
         Map<String, Objects> claims = new HashMap<>();
@@ -22,7 +22,7 @@ public class JwtService {
                 .setClaims(claims)
                 .setSubject(userName)
                 .setIssuedAt(new Date(System.currentTimeMillis()))
-                .setExpiration(new Date(System.currentTimeMillis()+1000*60*30))
+                .setExpiration(new Date(System.currentTimeMillis()+10000*60*30))
                 .signWith(getSignKey(), SignatureAlgorithm.HS256).compact();
     }
 
