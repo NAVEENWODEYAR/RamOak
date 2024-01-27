@@ -3,5 +3,14 @@ server:
   port: 4455
   
 spring:
-  application:
-    name: UAT
+  datasource:
+    url: 
+    username: 
+    password: 
+  jpa:
+    hibernate:
+      naming:
+        implicit-strategy: org.hibernate.cfg.ImprovedNamingStrategy
+      ddl-auto: create-drop
+    show-sql: true
+    generate-ddl: true
