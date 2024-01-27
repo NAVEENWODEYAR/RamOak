@@ -9,8 +9,6 @@ spring:
     password: ${Password}
   jpa:
     hibernate:
-      naming:
-        implicit-strategy: org.hibernate.cfg.ImprovedNamingStrategy
       ddl-auto: create-drop
     show-sql: true
     generate-ddl: true
