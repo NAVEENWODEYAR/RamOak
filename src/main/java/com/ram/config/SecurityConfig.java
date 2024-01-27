@@ -26,7 +26,7 @@ import com.ram.service.UserService;
 public class SecurityConfig  {
 
     @Autowired
-    private JwtFilter filter;
+    private JwtFilter jwtFilter;
     
     @Bean
     public UserDetailsService userDetailsService() {
@@ -42,7 +42,7 @@ public class SecurityConfig  {
 					.anyRequest().authenticated())
 				.sessionManagement(session->session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
 				.authenticationProvider(authenticationProvider())
-				.addFilterBefore(filter,UsernamePasswordAuthenticationFilter.class)
+				.addFilterBefore(jwtFilter,UsernamePasswordAuthenticationFilter.class)
 				.build();	
     }
     
@@ -57,7 +57,6 @@ public class SecurityConfig  {
 	DaoAuthenticationProvider authenticationProvider = new DaoAuthenticationProvider();
 	authenticationProvider.setUserDetailsService(userDetailsService());
 	authenticationProvider.setPasswordEncoder(passwordEncoder());
-	
 	return authenticationProvider();
     }
     
