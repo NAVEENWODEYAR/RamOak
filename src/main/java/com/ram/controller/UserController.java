@@ -27,7 +27,7 @@ public class UserController {
 
     @GetMapping("/welcome")
     public String welcome(){
-        return "Welcome to Spring Security tutorials !!";
+        return "Jai Sri Ram.,";
     }
 
     @PostMapping("/addUser")
