@@ -20,6 +20,7 @@ public class UserInfo {
     @GeneratedValue(strategy = GenerationType.TABLE)
     private Integer userId;
     private String userName;
+    private String userPassword;
     private String userMail;
     private String userRoles;
 }
