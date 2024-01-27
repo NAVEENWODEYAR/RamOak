@@ -9,6 +9,6 @@ spring:
     password: ${Password}
   jpa:
     hibernate:
-      ddl-auto: create-drop
+      ddl-auto: update
     show-sql: true
     generate-ddl: true
