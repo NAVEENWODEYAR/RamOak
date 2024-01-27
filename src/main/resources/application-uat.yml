@@ -3,10 +3,10 @@ server:
   port: 4455
   
 spring:
-  datasource:
-    url: 
-    username: 
-    password: 
+  datasource: 
+    url: jdbc:mysql://localhost:3306/ram?createDatabaseIfNotExists=true
+    username: ${Database}
+    password: ${Password}
   jpa:
     hibernate:
       naming:
