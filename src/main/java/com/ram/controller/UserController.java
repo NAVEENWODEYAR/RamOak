@@ -38,11 +38,13 @@ public class UserController {
     }
 
     @PostMapping("/addUser")
+    @ResponseStatus(code = HttpStatus.ACCEPTED)
     public String addUser(@RequestBody UserInfo userInfo){
         return userInfoService.addUser(userInfo);
 
     }
     @PostMapping("/login")
+    @ResponseStatus(code = HttpStatus.CONTINUE)
     public String addUser(@RequestBody AuthRequest authRequest){
         Authentication authenticate = authenticationManager.authenticate(new UsernamePasswordAuthenticationToken(authRequest.getUserName(), authRequest.getUserPassword()));
         if(authenticate.isAuthenticated()){
