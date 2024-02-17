@@ -1,6 +1,7 @@
 package com.ram.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
@@ -26,8 +27,14 @@ public class UserController {
     private JwtService jwtService;
 
     @GetMapping("/welcome")
+    @ResponseStatus(code = HttpStatus.FOUND)
     public String welcome(){
         return "Jai Sri Ram.,";
+    }
+    @GetMapping("/jwt")
+    @ResponseStatus(code = HttpStatus.OK)
+    public String greetMsg() {
+	return "Json Web Token,";
     }
 
     @PostMapping("/addUser")
