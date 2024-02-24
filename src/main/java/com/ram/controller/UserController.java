@@ -55,9 +55,11 @@ public class UserController {
     }
     @GetMapping("/getUsers")
     @PreAuthorize("hasAuthority('ADMIN_ROLES')")
+    @ResponseStatus(code = HttpStatus.FOUND)
     public List<UserInfo> getAllUsers(){
         return userInfoService.getAllUser();
     }
+    
     @GetMapping("/getUsers/{id}")
     @PreAuthorize("hasAuthority('USER_ROLES')")
     public UserInfo getAllUsers(@PathVariable Integer id){
