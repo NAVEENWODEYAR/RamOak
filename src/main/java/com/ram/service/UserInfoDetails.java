@@ -12,6 +12,10 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 public class UserInfoDetails implements UserDetails {
+    /**
+     * 
+     */
+    private static final long serialVersionUID = 2984506556402628467L;
     String userName=null;
     String password = null;
     List<GrantedAuthority> authorities;
