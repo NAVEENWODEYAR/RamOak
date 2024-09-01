@@ -19,50 +19,57 @@ import java.util.List;
 @RestController
 @RequestMapping("/auth")
 public class UserController {
-    @Autowired
-    private UserService userInfoService;
-    @Autowired
-    private AuthenticationManager authenticationManager;
-    @Autowired
-    private JwtService jwtService;
 
-    @GetMapping("/welcome")
-    @ResponseStatus(code = HttpStatus.FOUND)
-    public String welcome(){
-        return "Jai Sri Ram.,";
-    }
-    @GetMapping("/jwt")
-    @ResponseStatus(code = HttpStatus.OK)
-    public String greetMsg() {
-	return "Json Web Token,";
-    }
+	@Autowired
+	private UserService userInfoService;
 
-    @PostMapping("/addUser")
-    @ResponseStatus(code = HttpStatus.ACCEPTED)
-    public String addUser(@RequestBody UserInfo userInfo){
-        return userInfoService.addUser(userInfo);
+	@Autowired
+	private AuthenticationManager authenticationManager;
 
-    }
-    @PostMapping("/login")
-    @ResponseStatus(code = HttpStatus.CONTINUE)
-    public String addUser(@RequestBody AuthRequest authRequest){
-        Authentication authenticate = authenticationManager.authenticate(new UsernamePasswordAuthenticationToken(authRequest.getUserName(), authRequest.getUserPassword()));
-        if(authenticate.isAuthenticated()){
-            return jwtService.generateToken(authRequest.getUserName());
-        }else {
-            throw new UsernameNotFoundException("Invalid user request");
-        }
-    }
-    @GetMapping("/getUsers")
-    @PreAuthorize("hasAuthority('ADMIN_ROLES')")
-    @ResponseStatus(code = HttpStatus.FOUND)
-    public List<UserInfo> getAllUsers(){
-        return userInfoService.getAllUser();
-    }
-    
-    @GetMapping("/getUsers/{id}")
-    @PreAuthorize("hasAuthority('USER_ROLES')")
-    public UserInfo getAllUsers(@PathVariable Integer id){
-        return userInfoService.getUser(id);
-    }
+	@Autowired
+	private JwtService jwtService;
+
+	@GetMapping("/welcome")
+	@ResponseStatus(code = HttpStatus.FOUND)
+	public String welcome() {
+		return "Jai Sri Ram.,";
+	}
+
+	@GetMapping("/jwt")
+	@ResponseStatus(code = HttpStatus.OK)
+	public String greetMsg() {
+		return "Json Web Token,";
+	}
+
+	@PostMapping("/addUser")
+	@ResponseStatus(code = HttpStatus.ACCEPTED)
+	public String addUser(@RequestBody UserInfo userInfo) {
+		return userInfoService.addUser(userInfo);
+
+	}
+
+	@PostMapping("/login")
+	@ResponseStatus(code = HttpStatus.CONTINUE)
+	public String addUser(@RequestBody AuthRequest authRequest) {
+		Authentication authenticate = authenticationManager.authenticate(
+				new UsernamePasswordAuthenticationToken(authRequest.getUserName(), authRequest.getUserPassword()));
+		if (authenticate.isAuthenticated()) {
+			return jwtService.generateToken(authRequest.getUserName());
+		} else {
+			throw new UsernameNotFoundException("Invalid user request");
+		}
+	}
+
+	@GetMapping("/getUsers")
+	@PreAuthorize("hasAuthority('ADMIN_ROLES')")
+	@ResponseStatus(code = HttpStatus.FOUND)
+	public List<UserInfo> getAllUsers() {
+		return userInfoService.getAllUser();
+	}
+
+	@GetMapping("/getUsers/{id}")
+	@PreAuthorize("hasAuthority('USER_ROLES')")
+	public UserInfo getAllUsers(@PathVariable Integer id) {
+		return userInfoService.getUser(id);
+	}
 }

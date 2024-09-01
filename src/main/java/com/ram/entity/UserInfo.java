@@ -23,4 +23,63 @@ public class UserInfo {
     private String userPassword;
     private String userMail;
     private String userRoles;
+    
+    public UserInfo() {}
+
+	public UserInfo(Integer userId, String userName, String userPassword, String userMail, String userRoles) {
+		super();
+		this.userId = userId;
+		this.userName = userName;
+		this.userPassword = userPassword;
+		this.userMail = userMail;
+		this.userRoles = userRoles;
+	}
+
+	public Integer getUserId() {
+		return userId;
+	}
+
+	public void setUserId(Integer userId) {
+		this.userId = userId;
+	}
+
+	public String getUserName() {
+		return userName;
+	}
+
+	public void setUserName(String userName) {
+		this.userName = userName;
+	}
+
+	public String getUserPassword() {
+		return userPassword;
+	}
+
+	public void setUserPassword(String userPassword) {
+		this.userPassword = userPassword;
+	}
+
+	public String getUserMail() {
+		return userMail;
+	}
+
+	public void setUserMail(String userMail) {
+		this.userMail = userMail;
+	}
+
+	public String getUserRoles() {
+		return userRoles;
+	}
+
+	public void setUserRoles(String userRoles) {
+		this.userRoles = userRoles;
+	}
+
+	@Override
+	public String toString() {
+		return "UserInfo [userId=" + userId + ", userName=" + userName + ", userPassword=" + userPassword
+				+ ", userMail=" + userMail + ", userRoles=" + userRoles + "]";
+	}
+    
+    
 }
