@@ -8,9 +8,9 @@ spring:
       password: ram
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/${Db}
-    username: ${Database}
-    password: ${Password}
+    url: jdbc:mysql://localhost:3306/ram
+    username: root
+    password: boss
   jpa:
     database: mysql
     show-sql: true
@@ -22,7 +22,7 @@ spring:
       repositories:
         enabled: true
 server:
-  port: 2133
+  port: 2134
   shutdown: graceful
 management:
   endpoints:
