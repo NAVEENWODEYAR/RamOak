@@ -9,6 +9,6 @@ import com.ram.model.Users;
  * @date 02-Sept-2024
  */
 @Repository
-public interface UsersRepo extends JpaRepository<Users, String> {
+public interface UsersRepo extends JpaRepository<Users, Integer> {
 
 }
