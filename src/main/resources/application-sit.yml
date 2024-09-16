@@ -1,10 +1,9 @@
-
 spring:
   application:
     name: SIT
   security:
     user:
-      name: ram	
+      name: ram
       password: ram
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
@@ -21,14 +20,24 @@ spring:
     jpa:
       repositories:
         enabled: true
-server:
-  port: 2134
-  shutdown: graceful
-management:
-  endpoints:
-    web:
-      exposure:
-        include: "*"
-  endpoint:
-    shutdown:
-      enabled: true
+  logging:
+    level:
+      root: INFO
+      org.springframework.web: DEBUG
+      org.hibernate: WARN
+    file:
+      name: ./log/restAPI/application.log
+      max-size: 10MB
+      max-history: 10
+      total-size-cap: 1GB
+  server:
+    port: 2134
+    shutdown: graceful
+  management:
+    endpoints:
+      web:
+        exposure:
+          include: "*"
+    endpoint:
+      shutdown:
+        enabled: true
