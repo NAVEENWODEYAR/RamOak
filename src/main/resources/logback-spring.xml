@@ -9,39 +9,33 @@
             <!-- Define the log message pattern including milliseconds -->
             <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} %-5level %logger{36} - %msg%n</pattern>
         </encoder>
-        <!-- Define rolling policy with time-based and size-based rolling -->
+        <!-- Define rolling policy with time-based rolling -->
         <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
-            <!-- Pattern for rolling files, including timestamp -->
-            <fileNamePattern>log/application-%d{yyyy-MM-dd-HH-mm-ss}.log</fileNamePattern>
-            <maxHistory>5</maxHistory> <!-- Keep logs for 5 days -->
-            <totalSizeCap>100MB</totalSizeCap> <!-- Total size of log files should be below 100MB -->
+            <!-- Pattern for rolling files, including date and time -->
+            <fileNamePattern>log/application-%d{yyyy-MM-dd_HH-mm-ss}.log</fileNamePattern>
+            <maxHistory>0</maxHistory> <!-- No history, only keep current log files -->
+            <totalSizeCap>1MB</totalSizeCap> <!-- Cap to manage size (optional) -->
         </rollingPolicy>
-        <triggeringPolicy class="ch.qos.logback.core.rolling.SizeBasedTriggeringPolicy">
-            <maxFileSize>1MB</maxFileSize> <!-- Maximum file size for each log file -->
-        </triggeringPolicy>
+        <!-- Omit or configure SizeBasedTriggeringPolicy if needed -->
     </appender>
 
     <!-- Root logger configuration -->
     <root level="INFO">
         <!-- Attach the FILE appender to the root logger -->
         <appender-ref ref="FILE" />
+        <!-- Optionally, attach the CONSOLE appender to the root logger -->
+        <appender-ref ref="CONSOLE" />
     </root>
 
     <!-- Custom logger configurations -->
     <logger name="org.springframework.web" level="DEBUG"/>
     <logger name="org.hibernate" level="ERROR"/>
 
-    <!-- Optionally, add a ConsoleAppender for console logging -->
+    <!-- ConsoleAppender configuration -->
     <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
         <encoder>
             <!-- Define the log message pattern for console output -->
             <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} %-5level %logger{36} - %msg%n</pattern>
         </encoder>
     </appender>
-
-    <!-- Optionally, configure the root logger to log to the console as well -->
-    <root level="INFO">
-        <appender-ref ref="FILE" />
-        <appender-ref ref="CONSOLE" />
-    </root>
 </configuration>

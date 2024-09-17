@@ -27,7 +27,7 @@ public class UserService {
 	private UsersRepo usersRepo;
 	
 	// schedule an job to add to db(every 5 sec)
-	@Scheduled(fixedRate = 1000)
+	@Scheduled(fixedRate = 100000)
 	public void addToDB() {
 		Users users = new Users();
 			  users.setName("user"+new Random().nextInt(345753));
