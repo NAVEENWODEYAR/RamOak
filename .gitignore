@@ -31,3 +31,10 @@ build/
 
 ### VS Code ###
 .vscode/
+*.class
+./log
+log/application.log
+/log
+*.properties
+*.idea
+*.application.log
