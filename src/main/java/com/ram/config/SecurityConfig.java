@@ -27,6 +27,7 @@ public class SecurityConfig {
 
     @Autowired
     private JwtFilter jwtFilter;
+    
     @Bean
     public UserDetailsService userDetailsService(){
         return new UserService();
@@ -36,8 +37,8 @@ public class SecurityConfig {
     public SecurityFilterChain securityFilterChain(HttpSecurity httpSecurity) throws Exception {
         return httpSecurity.csrf(csrf->csrf.disable())
                 .authorizeHttpRequests(auth->auth
-                        .requestMatchers("/auth/welcome","/auth/addUser","/auth/login")
-                        .permitAll()
+                        .requestMatchers("/auth/welcome","/auth/addUser","/auth/login").permitAll()
+                        .requestMatchers("/v2/api-docs","/swagger-resources/**","/swagger-ui/**","/swagger-ui.html").permitAll()
                         .anyRequest().authenticated())
                 .sessionManagement(session->session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
                 .authenticationProvider(authenticationProvider())
