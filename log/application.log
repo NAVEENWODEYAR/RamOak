@@ -3944,3 +3944,792 @@ This generated password is for development use only. Your security configuration
 2024-09-18 20:55:24.503 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
 2024-09-18 20:55:24.505 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-30 - Shutdown initiated...
 2024-09-18 20:55:24.517 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-30 - Shutdown completed.
+2024-09-19 20:48:58.464 INFO  com.ram.JavaRamApplication - Starting JavaRamApplication using Java 21.0.1 with PID 10164 (N:\Pro\Menses\2024\Jan\eclipsE\JavaRam\target\classes started by NaveenWodeyar in N:\Pro\Menses\2024\Jan\eclipsE\JavaRam)
+2024-09-19 20:48:58.468 INFO  com.ram.JavaRamApplication - No active profile set, falling back to 1 default profile: "default"
+2024-09-19 20:48:58.583 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-09-19 20:48:58.583 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-09-19 20:49:00.954 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-09-19 20:49:00.958 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-19 20:49:01.243 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 269 ms. Found 2 JPA repository interfaces.
+2024-09-19 20:49:01.272 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-09-19 20:49:01.275 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-09-19 20:49:01.302 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ram.repo.OrdersRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-09-19 20:49:01.304 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ram.repo.UserRepo; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-09-19 20:49:01.305 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+2024-09-19 20:49:02.098 WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [annotationActionEndpointMapping] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2024-09-19 20:49:02.150 INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2024-09-19 20:49:03.177 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 7890 (http)
+2024-09-19 20:49:03.196 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-7890"]
+2024-09-19 20:49:03.199 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-09-19 20:49:03.200 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.18]
+2024-09-19 20:49:03.299 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-09-19 20:49:03.299 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 4714 ms
+2024-09-19 20:49:03.876 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-09-19 20:49:04.978 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2c82aed3
+2024-09-19 20:49:04.982 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-09-19 20:49:05.001 INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/ram?createDatabaseIfNotExist=true'
+2024-09-19 20:49:06.590 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-19 20:49:08.906 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-19 20:49:09.754 DEBUG o.s.w.f.ServerHttpObservationFilter - Filter 'webMvcObservationFilter' configured for use
+2024-09-19 20:49:10.310 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-19 20:49:11.274 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 17 mappings in 'requestMappingHandlerMapping'
+2024-09-19 20:49:15.521 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2024-09-19 20:49:16.007 INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-09-19 20:49:16.240 INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@396576ef, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@69863a75, org.springframework.security.web.context.SecurityContextHolderFilter@237b7b45, org.springframework.security.web.header.HeaderWriterFilter@5786a5f8, org.springframework.web.filter.CorsFilter@2c2cde94, org.springframework.security.web.authentication.logout.LogoutFilter@1b6b5cbf, com.ram.filter.JwtFilter@74490cb, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6932f73a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@52d87187, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@52b6709, org.springframework.security.web.session.SessionManagementFilter@2e93306b, org.springframework.security.web.access.ExceptionTranslationFilter@69796ea2, org.springframework.security.web.access.intercept.AuthorizationFilter@2b892614]
+2024-09-19 20:49:16.515 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-09-19 20:49:16.599 DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-09-19 20:49:16.745 DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 2 @ExceptionHandler, 0 ResponseBodyAdvice
+2024-09-19 20:49:18.364 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-09-19 20:49:18.480 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-7890"]
+2024-09-19 20:49:18.512 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 7890 (http) with context path ''
+2024-09-19 20:49:18.555 INFO  com.ram.JavaRamApplication - Started JavaRamApplication in 21.186 seconds (process running for 22.886)
+2024-09-19 20:49:19.118 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-19 20:49:19.118 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-09-19 20:49:19.118 DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+2024-09-19 20:49:19.119 DEBUG o.s.web.servlet.DispatcherServlet - Detected AcceptHeaderLocaleResolver
+2024-09-19 20:49:19.119 DEBUG o.s.web.servlet.DispatcherServlet - Detected FixedThemeResolver
+2024-09-19 20:49:19.123 DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@495d40c5
+2024-09-19 20:49:19.125 DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@1378fd08
+2024-09-19 20:49:19.125 DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-09-19 20:49:19.125 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 7 ms
+2024-09-19 20:54:40.821 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 3 class path changes (0 additions, 0 deletions, 3 modifications)
+2024-09-19 20:54:40.950 INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-7890"]
+2024-09-19 20:54:41.062 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-19 20:54:41.151 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-09-19 20:54:41.180 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-09-19 20:54:41.592 INFO  com.ram.JavaRamApplication - Starting JavaRamApplication using Java 21.0.1 with PID 10164 (N:\Pro\Menses\2024\Jan\eclipsE\JavaRam\target\classes started by NaveenWodeyar in N:\Pro\Menses\2024\Jan\eclipsE\JavaRam)
+2024-09-19 20:54:41.595 INFO  com.ram.JavaRamApplication - No active profile set, falling back to 1 default profile: "default"
+2024-09-19 20:54:43.511 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-09-19 20:54:43.512 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-19 20:54:43.555 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 40 ms. Found 2 JPA repository interfaces.
+2024-09-19 20:54:43.578 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-09-19 20:54:43.578 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-09-19 20:54:43.588 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ram.repo.OrdersRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-09-19 20:54:43.588 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ram.repo.UserRepo; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-09-19 20:54:43.589 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+2024-09-19 20:54:43.894 WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [annotationActionEndpointMapping] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2024-09-19 20:54:43.913 INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2024-09-19 20:54:45.080 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 7890 (http)
+2024-09-19 20:54:45.089 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-7890"]
+2024-09-19 20:54:45.090 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-09-19 20:54:45.090 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.18]
+2024-09-19 20:54:45.414 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-09-19 20:54:45.414 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3628 ms
+2024-09-19 20:54:46.200 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+2024-09-19 20:54:46.368 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@91af9df
+2024-09-19 20:54:46.369 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+2024-09-19 20:54:46.370 INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/ram?createDatabaseIfNotExist=true'
+2024-09-19 20:54:47.506 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-19 20:54:47.795 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-19 20:54:48.150 DEBUG o.s.w.f.ServerHttpObservationFilter - Filter 'webMvcObservationFilter' configured for use
+2024-09-19 20:54:48.713 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-19 20:54:50.181 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 17 mappings in 'requestMappingHandlerMapping'
+2024-09-19 20:54:55.258 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2024-09-19 20:54:55.851 INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-09-19 20:54:56.000 INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@50799867, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4027fd3a, org.springframework.security.web.context.SecurityContextHolderFilter@72e8630d, org.springframework.security.web.header.HeaderWriterFilter@1ff479e1, org.springframework.web.filter.CorsFilter@62e9fb82, org.springframework.security.web.authentication.logout.LogoutFilter@33599d95, com.ram.filter.JwtFilter@2f06ccf1, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2bca386c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4e967f2e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@49581946, org.springframework.security.web.session.SessionManagementFilter@1e6f6f84, org.springframework.security.web.access.ExceptionTranslationFilter@50b37cfd, org.springframework.security.web.access.intercept.AuthorizationFilter@3d85b973]
+2024-09-19 20:54:56.287 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-09-19 20:54:56.318 DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-09-19 20:54:56.364 DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 2 @ExceptionHandler, 0 ResponseBodyAdvice
+2024-09-19 20:54:57.225 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-09-19 20:54:57.272 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-7890"]
+2024-09-19 20:54:57.278 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 7890 (http) with context path ''
+2024-09-19 20:54:57.301 INFO  com.ram.JavaRamApplication - Started JavaRamApplication in 15.861 seconds (process running for 361.632)
+2024-09-19 20:54:57.309 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2024-09-19 20:54:58.651 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 22 class path changes (0 additions, 14 deletions, 8 modifications)
+2024-09-19 20:54:58.654 INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-7890"]
+2024-09-19 20:54:58.661 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-19 20:54:58.665 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+2024-09-19 20:54:58.671 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+2024-09-19 20:54:58.955 INFO  com.ram.JavaRamApplication - Starting JavaRamApplication using Java 21.0.1 with PID 10164 (N:\Pro\Menses\2024\Jan\eclipsE\JavaRam\target\classes started by NaveenWodeyar in N:\Pro\Menses\2024\Jan\eclipsE\JavaRam)
+2024-09-19 20:54:58.956 INFO  com.ram.JavaRamApplication - No active profile set, falling back to 1 default profile: "default"
+2024-09-19 20:54:59.498 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-09-19 20:54:59.498 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-19 20:54:59.499 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 0 ms. Found 0 JPA repository interfaces.
+2024-09-19 20:54:59.503 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-09-19 20:54:59.503 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-09-19 20:54:59.504 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 0 ms. Found 0 Redis repository interfaces.
+2024-09-19 20:54:59.676 WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [annotationActionEndpointMapping] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2024-09-19 20:54:59.678 INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2024-09-19 20:54:59.849 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 7890 (http)
+2024-09-19 20:54:59.850 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-7890"]
+2024-09-19 20:54:59.851 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-09-19 20:54:59.851 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.18]
+2024-09-19 20:54:59.988 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-09-19 20:54:59.991 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1030 ms
+2024-09-19 20:55:00.250 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Starting...
+2024-09-19 20:55:00.289 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-3 - Added connection com.mysql.cj.jdbc.ConnectionImpl@e62aeb9
+2024-09-19 20:55:00.289 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Start completed.
+2024-09-19 20:55:00.290 INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/ram?createDatabaseIfNotExist=true'
+2024-09-19 20:55:00.374 DEBUG o.s.w.f.ServerHttpObservationFilter - Filter 'webMvcObservationFilter' configured for use
+2024-09-19 20:55:00.571 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-19 20:55:00.598 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-19 20:55:00.808 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-19 20:55:01.124 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 6 mappings in 'requestMappingHandlerMapping'
+2024-09-19 20:55:03.137 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2024-09-19 20:55:03.221 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-09-19 20:55:03.249 DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-09-19 20:55:03.295 DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 2 @ExceptionHandler, 0 ResponseBodyAdvice
+2024-09-19 20:55:04.106 WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 91132994-9f29-46df-8b1b-874d16f4c777
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2024-09-19 20:55:04.290 INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-09-19 20:55:04.354 INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@17c49c73, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5b6a51f8, org.springframework.security.web.context.SecurityContextHolderFilter@58ad7f5c, org.springframework.security.web.header.HeaderWriterFilter@363be73a, org.springframework.web.filter.CorsFilter@7a06108f, org.springframework.security.web.csrf.CsrfFilter@711c8f1d, org.springframework.security.web.authentication.logout.LogoutFilter@22da994f, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@791934a0, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@6e1a0b83, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@764533ca, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@a08dd5e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1eab9ccf, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5664e1d4, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@45510e75, org.springframework.security.web.access.ExceptionTranslationFilter@47bee9d6, org.springframework.security.web.access.intercept.AuthorizationFilter@53b6872e]
+2024-09-19 20:55:04.702 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-09-19 20:55:04.736 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-7890"]
+2024-09-19 20:55:04.741 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 7890 (http) with context path ''
+2024-09-19 20:55:04.760 INFO  com.ram.JavaRamApplication - Started JavaRamApplication in 5.876 seconds (process running for 369.09)
+2024-09-19 20:55:04.770 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation delta:
+
+
+==========================
+CONDITION EVALUATION DELTA
+==========================
+
+
+Positive matches:
+-----------------
+
+   ManagementWebSecurityAutoConfiguration matched:
+      - found 'session' scope (OnWebApplicationCondition)
+      - AllNestedConditions 2 matched 0 did not; NestedCondition on DefaultWebSecurityCondition.Beans @ConditionalOnMissingBean (types: org.springframework.security.web.SecurityFilterChain; SearchStrategy: all) did not find any beans; NestedCondition on DefaultWebSecurityCondition.Classes @ConditionalOnClass found required classes 'org.springframework.security.web.SecurityFilterChain', 'org.springframework.security.config.annotation.web.builders.HttpSecurity' (DefaultWebSecurityCondition)
+
+   SpringBootWebSecurityConfiguration.WebSecurityEnablerConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.security.config.annotation.web.configuration.EnableWebSecurity' (OnClassCondition)
+      - @ConditionalOnMissingBean (names: springSecurityFilterChain; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   UserDetailsServiceAutoConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.security.authentication.AuthenticationManager' (OnClassCondition)
+      - AnyNestedCondition 1 matched 2 did not; NestedCondition on UserDetailsServiceAutoConfiguration.MissingAlternativeOrUserPropertiesConfigured.PasswordConfigured @ConditionalOnProperty (spring.security.user.password) did not find property 'password'; NestedCondition on UserDetailsServiceAutoConfiguration.MissingAlternativeOrUserPropertiesConfigured.NameConfigured @ConditionalOnProperty (spring.security.user.name) did not find property 'name'; NestedCondition on UserDetailsServiceAutoConfiguration.MissingAlternativeOrUserPropertiesConfigured.MissingAlternative @ConditionalOnMissingClass did not find unwanted classes 'org.springframework.security.oauth2.client.registration.ClientRegistrationRepository', 'org.springframework.security.oauth2.server.resource.introspection.OpaqueTokenIntrospector', 'org.springframework.security.saml2.provider.service.registration.RelyingPartyRegistrationRepository' (UserDetailsServiceAutoConfiguration.MissingAlternativeOrUserPropertiesConfigured)
+      - @ConditionalOnBean (types: org.springframework.security.config.annotation.ObjectPostProcessor; SearchStrategy: all) found bean 'objectPostProcessor'; @ConditionalOnMissingBean (types: org.springframework.security.authentication.AuthenticationManager,org.springframework.security.authentication.AuthenticationProvider,org.springframework.security.core.userdetails.UserDetailsService,org.springframework.security.authentication.AuthenticationManagerResolver,org.springframework.security.oauth2.jwt.JwtDecoder; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+
+Negative matches:
+-----------------
+
+    None
+
+
+Exclusions:
+-----------
+
+    None
+
+
+Unconditional classes:
+----------------------
+
+    None
+
+
+
+2024-09-19 20:55:18.006 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 10 class path changes (0 additions, 10 deletions, 0 modifications)
+2024-09-19 20:55:18.019 INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-7890"]
+2024-09-19 20:55:18.041 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-19 20:55:18.994 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown initiated...
+2024-09-19 20:55:19.300 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown completed.
+2024-09-19 20:55:19.923 INFO  com.ram.JavaRamApplication - Starting JavaRamApplication using Java 21.0.1 with PID 10164 (N:\Pro\Menses\2024\Jan\eclipsE\JavaRam\target\classes started by NaveenWodeyar in N:\Pro\Menses\2024\Jan\eclipsE\JavaRam)
+2024-09-19 20:55:19.926 INFO  com.ram.JavaRamApplication - No active profile set, falling back to 1 default profile: "default"
+2024-09-19 20:55:21.488 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-09-19 20:55:21.488 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-19 20:55:21.524 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 35 ms. Found 2 JPA repository interfaces.
+2024-09-19 20:55:21.530 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-09-19 20:55:21.530 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-09-19 20:55:21.536 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ram.repo.OrdersRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-09-19 20:55:21.537 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ram.repo.UserRepo; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-09-19 20:55:21.537 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.
+2024-09-19 20:55:21.708 WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [annotationActionEndpointMapping] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2024-09-19 20:55:21.711 INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2024-09-19 20:55:22.078 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 7890 (http)
+2024-09-19 20:55:22.080 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-7890"]
+2024-09-19 20:55:22.080 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-09-19 20:55:22.081 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.18]
+2024-09-19 20:55:22.159 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-09-19 20:55:22.160 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2229 ms
+2024-09-19 20:55:22.423 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Starting...
+2024-09-19 20:55:22.462 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-4 - Added connection com.mysql.cj.jdbc.ConnectionImpl@28f8e8c9
+2024-09-19 20:55:22.463 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Start completed.
+2024-09-19 20:55:22.463 INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/ram?createDatabaseIfNotExist=true'
+2024-09-19 20:55:23.062 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-19 20:55:23.375 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-19 20:55:23.832 DEBUG o.s.w.f.ServerHttpObservationFilter - Filter 'webMvcObservationFilter' configured for use
+2024-09-19 20:55:24.279 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-19 20:55:24.747 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 17 mappings in 'requestMappingHandlerMapping'
+2024-09-19 20:55:26.687 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2024-09-19 20:55:27.437 INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-09-19 20:55:27.767 INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@2bffc317, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7ddaabe1, org.springframework.security.web.context.SecurityContextHolderFilter@665c7c45, org.springframework.security.web.header.HeaderWriterFilter@35391494, org.springframework.web.filter.CorsFilter@4ba4e46f, org.springframework.security.web.authentication.logout.LogoutFilter@cfc0dab, com.ram.filter.JwtFilter@59feda66, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5eaf89ec, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@12ee48a1, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6809fd34, org.springframework.security.web.session.SessionManagementFilter@3101f510, org.springframework.security.web.access.ExceptionTranslationFilter@56e6f6a2, org.springframework.security.web.access.intercept.AuthorizationFilter@4fc32617]
+2024-09-19 20:55:28.395 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-09-19 20:55:28.486 DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-09-19 20:55:28.615 DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 2 @ExceptionHandler, 0 ResponseBodyAdvice
+2024-09-19 20:55:30.591 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-09-19 20:55:30.689 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-7890"]
+2024-09-19 20:55:30.697 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 7890 (http) with context path ''
+2024-09-19 20:55:30.736 INFO  com.ram.JavaRamApplication - Started JavaRamApplication in 10.941 seconds (process running for 395.067)
+2024-09-19 20:55:30.754 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation delta:
+
+
+==========================
+CONDITION EVALUATION DELTA
+==========================
+
+
+Positive matches:
+-----------------
+
+    None
+
+
+Negative matches:
+-----------------
+
+   ManagementWebSecurityAutoConfiguration:
+      Did not match:
+         - AllNestedConditions 1 matched 1 did not; NestedCondition on DefaultWebSecurityCondition.Beans @ConditionalOnMissingBean (types: org.springframework.security.web.SecurityFilterChain; SearchStrategy: all) found beans of type 'org.springframework.security.web.SecurityFilterChain' securityFilterChain; NestedCondition on DefaultWebSecurityCondition.Classes @ConditionalOnClass found required classes 'org.springframework.security.web.SecurityFilterChain', 'org.springframework.security.config.annotation.web.builders.HttpSecurity' (DefaultWebSecurityCondition)
+      Matched:
+         - found 'session' scope (OnWebApplicationCondition)
+
+   SpringBootWebSecurityConfiguration.WebSecurityEnablerConfiguration:
+      Did not match:
+         - @ConditionalOnMissingBean (names: springSecurityFilterChain; SearchStrategy: all) found beans named springSecurityFilterChain (OnBeanCondition)
+      Matched:
+         - @ConditionalOnClass found required class 'org.springframework.security.config.annotation.web.configuration.EnableWebSecurity' (OnClassCondition)
+
+   UserDetailsServiceAutoConfiguration:
+      Did not match:
+         - @ConditionalOnMissingBean (types: org.springframework.security.authentication.AuthenticationManager,org.springframework.security.authentication.AuthenticationProvider,org.springframework.security.core.userdetails.UserDetailsService,org.springframework.security.authentication.AuthenticationManagerResolver,org.springframework.security.oauth2.jwt.JwtDecoder; SearchStrategy: all) found beans of type 'org.springframework.security.authentication.AuthenticationManager' authenticationManager and found beans of type 'org.springframework.security.core.userdetails.UserDetailsService' userService, userDetailsService and found beans of type 'org.springframework.security.authentication.AuthenticationProvider' authenticationProvider (OnBeanCondition)
+      Matched:
+         - @ConditionalOnClass found required class 'org.springframework.security.authentication.AuthenticationManager' (OnClassCondition)
+         - AnyNestedCondition 1 matched 2 did not; NestedCondition on UserDetailsServiceAutoConfiguration.MissingAlternativeOrUserPropertiesConfigured.PasswordConfigured @ConditionalOnProperty (spring.security.user.password) did not find property 'password'; NestedCondition on UserDetailsServiceAutoConfiguration.MissingAlternativeOrUserPropertiesConfigured.NameConfigured @ConditionalOnProperty (spring.security.user.name) did not find property 'name'; NestedCondition on UserDetailsServiceAutoConfiguration.MissingAlternativeOrUserPropertiesConfigured.MissingAlternative @ConditionalOnMissingClass did not find unwanted classes 'org.springframework.security.oauth2.client.registration.ClientRegistrationRepository', 'org.springframework.security.oauth2.server.resource.introspection.OpaqueTokenIntrospector', 'org.springframework.security.saml2.provider.service.registration.RelyingPartyRegistrationRepository' (UserDetailsServiceAutoConfiguration.MissingAlternativeOrUserPropertiesConfigured)
+
+
+Exclusions:
+-----------
+
+    None
+
+
+Unconditional classes:
+----------------------
+
+    None
+
+
+
+2024-09-19 20:55:32.033 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 24 class path changes (24 additions, 0 deletions, 0 modifications)
+2024-09-19 20:55:32.035 INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-7890"]
+2024-09-19 20:55:32.089 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-19 20:55:32.101 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Shutdown initiated...
+2024-09-19 20:55:32.120 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Shutdown completed.
+2024-09-19 20:55:32.334 INFO  com.ram.JavaRamApplication - Starting JavaRamApplication using Java 21.0.1 with PID 10164 (N:\Pro\Menses\2024\Jan\eclipsE\JavaRam\target\classes started by NaveenWodeyar in N:\Pro\Menses\2024\Jan\eclipsE\JavaRam)
+2024-09-19 20:55:32.334 INFO  com.ram.JavaRamApplication - No active profile set, falling back to 1 default profile: "default"
+2024-09-19 20:55:33.174 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-09-19 20:55:33.174 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-19 20:55:33.200 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 25 ms. Found 2 JPA repository interfaces.
+2024-09-19 20:55:33.205 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-09-19 20:55:33.205 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-09-19 20:55:33.212 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ram.repo.OrdersRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-09-19 20:55:33.213 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ram.repo.UserRepo; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-09-19 20:55:33.213 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 7 ms. Found 0 Redis repository interfaces.
+2024-09-19 20:55:33.386 WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [annotationActionEndpointMapping] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2024-09-19 20:55:33.391 INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2024-09-19 20:55:33.765 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 7890 (http)
+2024-09-19 20:55:33.767 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-7890"]
+2024-09-19 20:55:33.767 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-09-19 20:55:33.767 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.18]
+2024-09-19 20:55:33.815 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-09-19 20:55:33.820 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1481 ms
+2024-09-19 20:55:33.977 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Starting...
+2024-09-19 20:55:34.001 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-5 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1c7c1336
+2024-09-19 20:55:34.001 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Start completed.
+2024-09-19 20:55:34.001 INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/ram?createDatabaseIfNotExist=true'
+2024-09-19 20:55:34.546 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-19 20:55:34.712 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-19 20:55:35.003 DEBUG o.s.w.f.ServerHttpObservationFilter - Filter 'webMvcObservationFilter' configured for use
+2024-09-19 20:55:35.362 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-19 20:55:35.876 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 17 mappings in 'requestMappingHandlerMapping'
+2024-09-19 20:55:40.237 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2024-09-19 20:55:40.954 INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-09-19 20:55:41.291 INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@49f79275, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@77848c03, org.springframework.security.web.context.SecurityContextHolderFilter@1ccead00, org.springframework.security.web.header.HeaderWriterFilter@4c876fc, org.springframework.web.filter.CorsFilter@180b12b, org.springframework.security.web.authentication.logout.LogoutFilter@72329775, com.ram.filter.JwtFilter@627f5403, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7c5e62ee, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@40109897, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4301831a, org.springframework.security.web.session.SessionManagementFilter@4220e7c1, org.springframework.security.web.access.ExceptionTranslationFilter@108a30b3, org.springframework.security.web.access.intercept.AuthorizationFilter@549d5a02]
+2024-09-19 20:55:41.579 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-09-19 20:55:41.756 DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-09-19 20:55:42.253 DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 2 @ExceptionHandler, 0 ResponseBodyAdvice
+2024-09-19 20:55:44.545 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-09-19 20:55:44.705 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-7890"]
+2024-09-19 20:55:44.711 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 7890 (http) with context path ''
+2024-09-19 20:55:44.751 INFO  com.ram.JavaRamApplication - Started JavaRamApplication in 12.474 seconds (process running for 409.082)
+2024-09-19 20:55:44.757 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2024-09-19 20:55:46.057 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 22 class path changes (0 additions, 0 deletions, 22 modifications)
+2024-09-19 20:55:46.059 INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-7890"]
+2024-09-19 20:55:46.065 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-19 20:55:46.068 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Shutdown initiated...
+2024-09-19 20:55:46.072 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Shutdown completed.
+2024-09-19 20:55:46.760 INFO  com.ram.JavaRamApplication - Starting JavaRamApplication using Java 21.0.1 with PID 10164 (N:\Pro\Menses\2024\Jan\eclipsE\JavaRam\target\classes started by NaveenWodeyar in N:\Pro\Menses\2024\Jan\eclipsE\JavaRam)
+2024-09-19 20:55:46.764 INFO  com.ram.JavaRamApplication - No active profile set, falling back to 1 default profile: "default"
+2024-09-19 20:55:48.178 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-09-19 20:55:48.179 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-19 20:55:48.211 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 31 ms. Found 2 JPA repository interfaces.
+2024-09-19 20:55:48.219 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-09-19 20:55:48.219 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-09-19 20:55:48.224 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ram.repo.OrdersRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-09-19 20:55:48.224 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ram.repo.UserRepo; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-09-19 20:55:48.224 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 5 ms. Found 0 Redis repository interfaces.
+2024-09-19 20:55:48.468 WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [annotationActionEndpointMapping] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2024-09-19 20:55:48.471 INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2024-09-19 20:55:48.840 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 7890 (http)
+2024-09-19 20:55:48.842 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-7890"]
+2024-09-19 20:55:48.843 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-09-19 20:55:48.843 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.18]
+2024-09-19 20:55:48.904 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-09-19 20:55:48.905 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2132 ms
+2024-09-19 20:55:49.208 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-6 - Starting...
+2024-09-19 20:55:49.249 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-6 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2812a091
+2024-09-19 20:55:49.250 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-6 - Start completed.
+2024-09-19 20:55:49.250 INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/ram?createDatabaseIfNotExist=true'
+2024-09-19 20:55:49.899 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-19 20:55:50.140 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-19 20:55:51.096 DEBUG o.s.w.f.ServerHttpObservationFilter - Filter 'webMvcObservationFilter' configured for use
+2024-09-19 20:55:51.472 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-19 20:55:52.177 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 17 mappings in 'requestMappingHandlerMapping'
+2024-09-19 20:55:54.276 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2024-09-19 20:55:54.699 INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-09-19 20:55:54.949 INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@455432e3, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@69b82b23, org.springframework.security.web.context.SecurityContextHolderFilter@1681846, org.springframework.security.web.header.HeaderWriterFilter@7c979de8, org.springframework.web.filter.CorsFilter@743bbfa8, org.springframework.security.web.authentication.logout.LogoutFilter@28a50951, com.ram.filter.JwtFilter@4220aecb, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4024301b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4f23e2c4, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6c1cf87f, org.springframework.security.web.session.SessionManagementFilter@125e74bb, org.springframework.security.web.access.ExceptionTranslationFilter@6e793050, org.springframework.security.web.access.intercept.AuthorizationFilter@6009893b]
+2024-09-19 20:55:55.329 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-09-19 20:55:55.408 DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-09-19 20:55:55.537 DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 2 @ExceptionHandler, 0 ResponseBodyAdvice
+2024-09-19 20:55:57.083 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-09-19 20:55:57.184 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-7890"]
+2024-09-19 20:55:57.191 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 7890 (http) with context path ''
+2024-09-19 20:55:57.228 INFO  com.ram.JavaRamApplication - Started JavaRamApplication in 10.616 seconds (process running for 421.558)
+2024-09-19 20:55:57.236 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2024-09-19 20:57:06.180 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 3 class path changes (0 additions, 0 deletions, 3 modifications)
+2024-09-19 20:57:06.183 INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-7890"]
+2024-09-19 20:57:06.189 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-19 20:57:06.192 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-6 - Shutdown initiated...
+2024-09-19 20:57:06.198 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-6 - Shutdown completed.
+2024-09-19 20:57:06.424 INFO  com.ram.JavaRamApplication - Starting JavaRamApplication using Java 21.0.1 with PID 10164 (N:\Pro\Menses\2024\Jan\eclipsE\JavaRam\target\classes started by NaveenWodeyar in N:\Pro\Menses\2024\Jan\eclipsE\JavaRam)
+2024-09-19 20:57:06.424 INFO  com.ram.JavaRamApplication - No active profile set, falling back to 1 default profile: "default"
+2024-09-19 20:57:07.263 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-09-19 20:57:07.263 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-19 20:57:07.289 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 25 ms. Found 2 JPA repository interfaces.
+2024-09-19 20:57:07.295 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-09-19 20:57:07.295 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-09-19 20:57:07.300 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ram.repo.OrdersRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-09-19 20:57:07.300 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ram.repo.UserRepo; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-09-19 20:57:07.300 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 5 ms. Found 0 Redis repository interfaces.
+2024-09-19 20:57:07.644 WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [annotationActionEndpointMapping] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2024-09-19 20:57:07.650 INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2024-09-19 20:57:08.123 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 7890 (http)
+2024-09-19 20:57:08.130 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-7890"]
+2024-09-19 20:57:08.130 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-09-19 20:57:08.131 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.18]
+2024-09-19 20:57:08.225 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-09-19 20:57:08.225 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1797 ms
+2024-09-19 20:57:08.594 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-7 - Starting...
+2024-09-19 20:57:08.630 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-7 - Added connection com.mysql.cj.jdbc.ConnectionImpl@68ab54b4
+2024-09-19 20:57:08.631 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-7 - Start completed.
+2024-09-19 20:57:08.631 INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/ram?createDatabaseIfNotExist=true'
+2024-09-19 20:57:09.096 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-19 20:57:09.225 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-19 20:57:10.057 DEBUG o.s.w.f.ServerHttpObservationFilter - Filter 'webMvcObservationFilter' configured for use
+2024-09-19 20:57:10.678 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-19 20:57:11.894 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 17 mappings in 'requestMappingHandlerMapping'
+2024-09-19 20:57:13.706 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2024-09-19 20:57:14.183 INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-09-19 20:57:14.337 INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@54849299, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3a0bfcbd, org.springframework.security.web.context.SecurityContextHolderFilter@40fbced4, org.springframework.security.web.header.HeaderWriterFilter@3448da5c, org.springframework.web.filter.CorsFilter@1ca92d2d, org.springframework.security.web.authentication.logout.LogoutFilter@359cd195, com.ram.filter.JwtFilter@2ed512c9, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@577db9f0, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4eeee287, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@45aea32f, org.springframework.security.web.session.SessionManagementFilter@73e286b, org.springframework.security.web.access.ExceptionTranslationFilter@285e2bba, org.springframework.security.web.access.intercept.AuthorizationFilter@2e880d31]
+2024-09-19 20:57:14.491 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-09-19 20:57:14.527 DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-09-19 20:57:14.575 DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 2 @ExceptionHandler, 0 ResponseBodyAdvice
+2024-09-19 20:57:15.487 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-09-19 20:57:15.539 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-7890"]
+2024-09-19 20:57:15.546 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 7890 (http) with context path ''
+2024-09-19 20:57:15.562 INFO  com.ram.JavaRamApplication - Started JavaRamApplication in 9.172 seconds (process running for 499.893)
+2024-09-19 20:57:15.566 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2024-09-19 21:02:13.737 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 2 class path changes (0 additions, 0 deletions, 2 modifications)
+2024-09-19 21:02:13.762 INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-7890"]
+2024-09-19 21:02:13.779 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-19 21:02:13.791 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-7 - Shutdown initiated...
+2024-09-19 21:02:13.811 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-7 - Shutdown completed.
+2024-09-19 21:02:14.014 INFO  com.ram.JavaRamApplication - Starting JavaRamApplication using Java 21.0.1 with PID 10164 (N:\Pro\Menses\2024\Jan\eclipsE\JavaRam\target\classes started by NaveenWodeyar in N:\Pro\Menses\2024\Jan\eclipsE\JavaRam)
+2024-09-19 21:02:14.014 INFO  com.ram.JavaRamApplication - No active profile set, falling back to 1 default profile: "default"
+2024-09-19 21:02:14.539 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-09-19 21:02:14.539 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-19 21:02:14.559 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 19 ms. Found 2 JPA repository interfaces.
+2024-09-19 21:02:14.563 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-09-19 21:02:14.563 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-09-19 21:02:14.567 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ram.repo.OrdersRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-09-19 21:02:14.567 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ram.repo.UserRepo; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-09-19 21:02:14.567 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 3 ms. Found 0 Redis repository interfaces.
+2024-09-19 21:02:14.716 WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [annotationActionEndpointMapping] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2024-09-19 21:02:14.721 INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2024-09-19 21:02:14.941 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 7890 (http)
+2024-09-19 21:02:14.941 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-7890"]
+2024-09-19 21:02:14.942 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-09-19 21:02:14.942 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.18]
+2024-09-19 21:02:14.979 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-09-19 21:02:14.979 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 963 ms
+2024-09-19 21:02:15.144 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-8 - Starting...
+2024-09-19 21:02:15.163 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-8 - Added connection com.mysql.cj.jdbc.ConnectionImpl@da74d82
+2024-09-19 21:02:15.163 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-8 - Start completed.
+2024-09-19 21:02:15.163 INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/ram?createDatabaseIfNotExist=true'
+2024-09-19 21:02:15.451 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-19 21:02:15.598 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-19 21:02:15.916 DEBUG o.s.w.f.ServerHttpObservationFilter - Filter 'webMvcObservationFilter' configured for use
+2024-09-19 21:02:16.427 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-19 21:02:16.809 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 17 mappings in 'requestMappingHandlerMapping'
+2024-09-19 21:02:18.358 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2024-09-19 21:02:18.718 INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-09-19 21:02:18.829 INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@26418e3f, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4f19161d, org.springframework.security.web.context.SecurityContextHolderFilter@9bd4538, org.springframework.security.web.header.HeaderWriterFilter@374cdf47, org.springframework.web.filter.CorsFilter@35e07ee1, org.springframework.security.web.authentication.logout.LogoutFilter@b2c4f4, com.ram.filter.JwtFilter@54d10663, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7905f30e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7b359ccb, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@38134bd2, org.springframework.security.web.session.SessionManagementFilter@76afd6d3, org.springframework.security.web.access.ExceptionTranslationFilter@5024e05, org.springframework.security.web.access.intercept.AuthorizationFilter@159f85d7]
+2024-09-19 21:02:18.992 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-09-19 21:02:19.038 DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-09-19 21:02:19.160 DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 2 @ExceptionHandler, 0 ResponseBodyAdvice
+2024-09-19 21:02:20.051 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-09-19 21:02:20.091 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-7890"]
+2024-09-19 21:02:20.096 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 7890 (http) with context path ''
+2024-09-19 21:02:20.109 INFO  com.ram.JavaRamApplication - Started JavaRamApplication in 6.13 seconds (process running for 804.44)
+2024-09-19 21:02:20.112 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2024-09-19 21:03:49.126 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2024-09-19 21:03:49.144 INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-7890"]
+2024-09-19 21:03:49.175 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-19 21:03:49.194 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-8 - Shutdown initiated...
+2024-09-19 21:03:49.214 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-8 - Shutdown completed.
+2024-09-19 21:03:49.567 INFO  com.ram.JavaRamApplication - Starting JavaRamApplication using Java 21.0.1 with PID 10164 (N:\Pro\Menses\2024\Jan\eclipsE\JavaRam\target\classes started by NaveenWodeyar in N:\Pro\Menses\2024\Jan\eclipsE\JavaRam)
+2024-09-19 21:03:49.568 INFO  com.ram.JavaRamApplication - No active profile set, falling back to 1 default profile: "default"
+2024-09-19 21:03:50.434 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-09-19 21:03:50.434 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-19 21:03:50.450 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 15 ms. Found 2 JPA repository interfaces.
+2024-09-19 21:03:50.453 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-09-19 21:03:50.453 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-09-19 21:03:50.456 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ram.repo.OrdersRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-09-19 21:03:50.456 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ram.repo.UserRepo; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-09-19 21:03:50.456 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 2 ms. Found 0 Redis repository interfaces.
+2024-09-19 21:03:50.582 WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [annotationActionEndpointMapping] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2024-09-19 21:03:50.584 INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2024-09-19 21:03:50.806 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 7890 (http)
+2024-09-19 21:03:50.807 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-7890"]
+2024-09-19 21:03:50.807 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-09-19 21:03:50.807 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.18]
+2024-09-19 21:03:50.843 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-09-19 21:03:50.844 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1271 ms
+2024-09-19 21:03:50.968 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-9 - Starting...
+2024-09-19 21:03:50.983 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-9 - Added connection com.mysql.cj.jdbc.ConnectionImpl@732409aa
+2024-09-19 21:03:50.983 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-9 - Start completed.
+2024-09-19 21:03:50.983 INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/ram?createDatabaseIfNotExist=true'
+2024-09-19 21:03:51.305 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-19 21:03:51.391 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-19 21:03:51.638 DEBUG o.s.w.f.ServerHttpObservationFilter - Filter 'webMvcObservationFilter' configured for use
+2024-09-19 21:03:51.863 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-19 21:03:52.240 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 17 mappings in 'requestMappingHandlerMapping'
+2024-09-19 21:03:53.579 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2024-09-19 21:03:53.895 INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-09-19 21:03:54.019 INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@2876e141, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@60fe3d6f, org.springframework.security.web.context.SecurityContextHolderFilter@4fdc5bfd, org.springframework.security.web.header.HeaderWriterFilter@4687f27d, org.springframework.web.filter.CorsFilter@6b270964, org.springframework.security.web.authentication.logout.LogoutFilter@5321c772, com.ram.filter.JwtFilter@44615a0f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7783d1b8, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@12ae9404, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@12465fce, org.springframework.security.web.session.SessionManagementFilter@7678cb0d, org.springframework.security.web.access.ExceptionTranslationFilter@f5c5f7d, org.springframework.security.web.access.intercept.AuthorizationFilter@2c94129]
+2024-09-19 21:03:54.194 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-09-19 21:03:54.220 DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-09-19 21:03:54.264 DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 2 @ExceptionHandler, 0 ResponseBodyAdvice
+2024-09-19 21:03:54.956 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-09-19 21:03:54.991 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-7890"]
+2024-09-19 21:03:54.996 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 7890 (http) with context path ''
+2024-09-19 21:03:55.007 INFO  com.ram.JavaRamApplication - Started JavaRamApplication in 5.536 seconds (process running for 899.338)
+2024-09-19 21:03:55.010 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2024-09-19 21:04:04.512 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-09-19 21:04:04.515 INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-7890"]
+2024-09-19 21:04:04.522 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-19 21:04:04.526 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-9 - Shutdown initiated...
+2024-09-19 21:04:04.530 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-9 - Shutdown completed.
+2024-09-19 21:04:04.766 INFO  com.ram.JavaRamApplication - Starting JavaRamApplication using Java 21.0.1 with PID 10164 (N:\Pro\Menses\2024\Jan\eclipsE\JavaRam\target\classes started by NaveenWodeyar in N:\Pro\Menses\2024\Jan\eclipsE\JavaRam)
+2024-09-19 21:04:04.767 INFO  com.ram.JavaRamApplication - No active profile set, falling back to 1 default profile: "default"
+2024-09-19 21:04:05.519 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-09-19 21:04:05.520 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-19 21:04:05.561 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 40 ms. Found 2 JPA repository interfaces.
+2024-09-19 21:04:05.565 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-09-19 21:04:05.565 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-09-19 21:04:05.568 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ram.repo.OrdersRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-09-19 21:04:05.569 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ram.repo.UserRepo; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-09-19 21:04:05.569 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 3 ms. Found 0 Redis repository interfaces.
+2024-09-19 21:04:05.678 WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [annotationActionEndpointMapping] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2024-09-19 21:04:05.680 INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2024-09-19 21:04:05.898 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 7890 (http)
+2024-09-19 21:04:05.899 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-7890"]
+2024-09-19 21:04:05.899 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-09-19 21:04:05.899 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.18]
+2024-09-19 21:04:05.938 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-09-19 21:04:05.938 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1169 ms
+2024-09-19 21:04:06.074 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-10 - Starting...
+2024-09-19 21:04:06.087 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-10 - Added connection com.mysql.cj.jdbc.ConnectionImpl@46ac2f48
+2024-09-19 21:04:06.087 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-10 - Start completed.
+2024-09-19 21:04:06.087 INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/ram?createDatabaseIfNotExist=true'
+2024-09-19 21:04:07.006 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-19 21:04:07.206 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-19 21:04:07.575 DEBUG o.s.w.f.ServerHttpObservationFilter - Filter 'webMvcObservationFilter' configured for use
+2024-09-19 21:04:08.015 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-19 21:04:08.626 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 17 mappings in 'requestMappingHandlerMapping'
+2024-09-19 21:04:10.448 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2024-09-19 21:04:10.778 INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-09-19 21:04:10.922 INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@1f59d7e, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2cc85da2, org.springframework.security.web.context.SecurityContextHolderFilter@57479fcc, org.springframework.security.web.header.HeaderWriterFilter@668c2a8c, org.springframework.web.filter.CorsFilter@6901bec8, org.springframework.security.web.authentication.logout.LogoutFilter@360016b2, com.ram.filter.JwtFilter@15b3af1d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1e19e0c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@77688f9b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@40e1f586, org.springframework.security.web.session.SessionManagementFilter@16e198c6, org.springframework.security.web.access.ExceptionTranslationFilter@7bdae78a, org.springframework.security.web.access.intercept.AuthorizationFilter@395c0b2]
+2024-09-19 21:04:11.069 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-09-19 21:04:11.096 DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-09-19 21:04:11.140 DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 2 @ExceptionHandler, 0 ResponseBodyAdvice
+2024-09-19 21:04:11.893 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-09-19 21:04:11.930 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-7890"]
+2024-09-19 21:04:11.934 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 7890 (http) with context path ''
+2024-09-19 21:04:11.948 INFO  com.ram.JavaRamApplication - Started JavaRamApplication in 7.214 seconds (process running for 916.279)
+2024-09-19 21:04:11.952 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2024-09-19 21:04:13.320 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-09-19 21:04:13.322 INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-7890"]
+2024-09-19 21:04:13.330 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-19 21:04:13.333 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-10 - Shutdown initiated...
+2024-09-19 21:04:13.338 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-10 - Shutdown completed.
+2024-09-19 21:04:13.595 INFO  com.ram.JavaRamApplication - Starting JavaRamApplication using Java 21.0.1 with PID 10164 (N:\Pro\Menses\2024\Jan\eclipsE\JavaRam\target\classes started by NaveenWodeyar in N:\Pro\Menses\2024\Jan\eclipsE\JavaRam)
+2024-09-19 21:04:13.595 INFO  com.ram.JavaRamApplication - No active profile set, falling back to 1 default profile: "default"
+2024-09-19 21:04:14.169 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-09-19 21:04:14.169 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-19 21:04:14.186 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 17 ms. Found 2 JPA repository interfaces.
+2024-09-19 21:04:14.190 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-09-19 21:04:14.190 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-09-19 21:04:14.194 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ram.repo.OrdersRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-09-19 21:04:14.194 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ram.repo.UserRepo; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-09-19 21:04:14.195 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 4 ms. Found 0 Redis repository interfaces.
+2024-09-19 21:04:14.309 WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [annotationActionEndpointMapping] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2024-09-19 21:04:14.312 INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2024-09-19 21:04:14.525 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 7890 (http)
+2024-09-19 21:04:14.525 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-7890"]
+2024-09-19 21:04:14.526 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-09-19 21:04:14.526 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.18]
+2024-09-19 21:04:14.565 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-09-19 21:04:14.565 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 968 ms
+2024-09-19 21:04:14.697 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-11 - Starting...
+2024-09-19 21:04:14.711 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-11 - Added connection com.mysql.cj.jdbc.ConnectionImpl@30c1d56c
+2024-09-19 21:04:14.712 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-11 - Start completed.
+2024-09-19 21:04:14.712 INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/ram?createDatabaseIfNotExist=true'
+2024-09-19 21:04:15.025 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-19 21:04:15.135 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-19 21:04:15.482 DEBUG o.s.w.f.ServerHttpObservationFilter - Filter 'webMvcObservationFilter' configured for use
+2024-09-19 21:04:15.738 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-19 21:04:16.083 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 17 mappings in 'requestMappingHandlerMapping'
+2024-09-19 21:04:17.518 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2024-09-19 21:04:17.763 INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-09-19 21:04:17.881 INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@bbeb243, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@79739b46, org.springframework.security.web.context.SecurityContextHolderFilter@18a2f91, org.springframework.security.web.header.HeaderWriterFilter@68e3263a, org.springframework.web.filter.CorsFilter@cfdadde, org.springframework.security.web.authentication.logout.LogoutFilter@2b183c67, com.ram.filter.JwtFilter@3fab0d37, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@39ddfcaf, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@452767ab, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7ac793fa, org.springframework.security.web.session.SessionManagementFilter@7b1f7bf8, org.springframework.security.web.access.ExceptionTranslationFilter@561a28cb, org.springframework.security.web.access.intercept.AuthorizationFilter@53c43f65]
+2024-09-19 21:04:18.022 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-09-19 21:04:18.059 DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-09-19 21:04:18.119 DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 2 @ExceptionHandler, 0 ResponseBodyAdvice
+2024-09-19 21:04:19.034 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-09-19 21:04:19.068 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-7890"]
+2024-09-19 21:04:19.072 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 7890 (http) with context path ''
+2024-09-19 21:04:19.084 INFO  com.ram.JavaRamApplication - Started JavaRamApplication in 5.521 seconds (process running for 923.415)
+2024-09-19 21:04:19.087 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2024-09-19 21:06:13.398 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-09-19 21:06:13.401 INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-7890"]
+2024-09-19 21:06:13.410 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-19 21:06:13.414 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-11 - Shutdown initiated...
+2024-09-19 21:06:13.421 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-11 - Shutdown completed.
+2024-09-19 21:06:13.637 INFO  com.ram.JavaRamApplication - Starting JavaRamApplication using Java 21.0.1 with PID 10164 (N:\Pro\Menses\2024\Jan\eclipsE\JavaRam\target\classes started by NaveenWodeyar in N:\Pro\Menses\2024\Jan\eclipsE\JavaRam)
+2024-09-19 21:06:13.638 INFO  com.ram.JavaRamApplication - No active profile set, falling back to 1 default profile: "default"
+2024-09-19 21:06:14.176 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-09-19 21:06:14.176 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-19 21:06:14.191 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 15 ms. Found 2 JPA repository interfaces.
+2024-09-19 21:06:14.194 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-09-19 21:06:14.194 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-09-19 21:06:14.198 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ram.repo.OrdersRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-09-19 21:06:14.198 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ram.repo.UserRepo; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-09-19 21:06:14.198 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 3 ms. Found 0 Redis repository interfaces.
+2024-09-19 21:06:14.301 WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [annotationActionEndpointMapping] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2024-09-19 21:06:14.303 INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2024-09-19 21:06:14.487 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 7890 (http)
+2024-09-19 21:06:14.488 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-7890"]
+2024-09-19 21:06:14.488 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-09-19 21:06:14.488 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.18]
+2024-09-19 21:06:14.524 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-09-19 21:06:14.524 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 882 ms
+2024-09-19 21:06:14.634 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-12 - Starting...
+2024-09-19 21:06:14.648 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-12 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6126c60a
+2024-09-19 21:06:14.648 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-12 - Start completed.
+2024-09-19 21:06:14.648 INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/ram?createDatabaseIfNotExist=true'
+2024-09-19 21:06:14.884 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-19 21:06:14.971 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-19 21:06:15.241 DEBUG o.s.w.f.ServerHttpObservationFilter - Filter 'webMvcObservationFilter' configured for use
+2024-09-19 21:06:15.536 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-19 21:06:15.868 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 17 mappings in 'requestMappingHandlerMapping'
+2024-09-19 21:06:17.013 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2024-09-19 21:06:17.327 INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-09-19 21:06:17.444 INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@2a9bda44, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@549b3a46, org.springframework.security.web.context.SecurityContextHolderFilter@4483bed3, org.springframework.security.web.header.HeaderWriterFilter@7ff7a586, org.springframework.web.filter.CorsFilter@211b4cf3, org.springframework.security.web.authentication.logout.LogoutFilter@55c144c8, com.ram.filter.JwtFilter@6dc9f66d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@17298fd, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@457bd3ce, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@579abbbe, org.springframework.security.web.session.SessionManagementFilter@10bceb51, org.springframework.security.web.access.ExceptionTranslationFilter@171b7881, org.springframework.security.web.access.intercept.AuthorizationFilter@5824db5a]
+2024-09-19 21:06:17.580 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-09-19 21:06:17.608 DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-09-19 21:06:17.647 DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 2 @ExceptionHandler, 0 ResponseBodyAdvice
+2024-09-19 21:06:18.436 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-09-19 21:06:18.467 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-7890"]
+2024-09-19 21:06:18.472 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 7890 (http) with context path ''
+2024-09-19 21:06:18.483 INFO  com.ram.JavaRamApplication - Started JavaRamApplication in 4.906 seconds (process running for 1042.814)
+2024-09-19 21:06:18.487 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2024-09-19 21:07:15.219 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-09-19 21:07:15.223 INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-7890"]
+2024-09-19 21:07:15.238 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-19 21:07:15.244 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-12 - Shutdown initiated...
+2024-09-19 21:07:15.255 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-12 - Shutdown completed.
+2024-09-19 21:07:15.486 INFO  com.ram.JavaRamApplication - Starting JavaRamApplication using Java 21.0.1 with PID 10164 (N:\Pro\Menses\2024\Jan\eclipsE\JavaRam\target\classes started by NaveenWodeyar in N:\Pro\Menses\2024\Jan\eclipsE\JavaRam)
+2024-09-19 21:07:15.487 INFO  com.ram.JavaRamApplication - No active profile set, falling back to 1 default profile: "default"
+2024-09-19 21:07:15.983 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-09-19 21:07:15.983 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-19 21:07:16.000 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 17 ms. Found 2 JPA repository interfaces.
+2024-09-19 21:07:16.005 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-09-19 21:07:16.005 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-09-19 21:07:16.008 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ram.repo.OrdersRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-09-19 21:07:16.009 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ram.repo.UserRepo; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-09-19 21:07:16.009 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 3 ms. Found 0 Redis repository interfaces.
+2024-09-19 21:07:16.157 WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [annotationActionEndpointMapping] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2024-09-19 21:07:16.160 INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2024-09-19 21:07:16.462 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 7890 (http)
+2024-09-19 21:07:16.463 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-7890"]
+2024-09-19 21:07:16.464 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-09-19 21:07:16.464 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.18]
+2024-09-19 21:07:16.499 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-09-19 21:07:16.499 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1008 ms
+2024-09-19 21:07:16.611 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-13 - Starting...
+2024-09-19 21:07:16.625 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-13 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3c554430
+2024-09-19 21:07:16.625 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-13 - Start completed.
+2024-09-19 21:07:16.625 INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/ram?createDatabaseIfNotExist=true'
+2024-09-19 21:07:16.860 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-19 21:07:16.950 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-19 21:07:17.212 DEBUG o.s.w.f.ServerHttpObservationFilter - Filter 'webMvcObservationFilter' configured for use
+2024-09-19 21:07:17.566 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-19 21:07:17.904 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 17 mappings in 'requestMappingHandlerMapping'
+2024-09-19 21:07:19.436 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2024-09-19 21:07:19.783 INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-09-19 21:07:19.909 INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@7263eab4, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5897f64a, org.springframework.security.web.context.SecurityContextHolderFilter@494e226b, org.springframework.security.web.header.HeaderWriterFilter@1777e7a9, org.springframework.web.filter.CorsFilter@3c38ad47, org.springframework.security.web.authentication.logout.LogoutFilter@4c4d5f1, com.ram.filter.JwtFilter@21ad4d5f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4e79e5f3, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@72f9bfe0, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@795c447, org.springframework.security.web.session.SessionManagementFilter@148bc476, org.springframework.security.web.access.ExceptionTranslationFilter@3f17f964, org.springframework.security.web.access.intercept.AuthorizationFilter@63392cee]
+2024-09-19 21:07:20.067 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-09-19 21:07:20.098 DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-09-19 21:07:20.142 DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 2 @ExceptionHandler, 0 ResponseBodyAdvice
+2024-09-19 21:07:20.827 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-09-19 21:07:20.860 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-7890"]
+2024-09-19 21:07:20.866 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 7890 (http) with context path ''
+2024-09-19 21:07:20.884 INFO  com.ram.JavaRamApplication - Started JavaRamApplication in 5.438 seconds (process running for 1105.215)
+2024-09-19 21:07:20.889 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2024-09-19 21:08:40.161 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-09-19 21:08:40.164 INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-7890"]
+2024-09-19 21:08:40.174 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-19 21:08:40.181 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-13 - Shutdown initiated...
+2024-09-19 21:08:40.188 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-13 - Shutdown completed.
+2024-09-19 21:08:40.403 INFO  com.ram.JavaRamApplication - Starting JavaRamApplication using Java 21.0.1 with PID 10164 (N:\Pro\Menses\2024\Jan\eclipsE\JavaRam\target\classes started by NaveenWodeyar in N:\Pro\Menses\2024\Jan\eclipsE\JavaRam)
+2024-09-19 21:08:40.404 INFO  com.ram.JavaRamApplication - No active profile set, falling back to 1 default profile: "default"
+2024-09-19 21:08:40.967 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-09-19 21:08:40.967 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-19 21:08:40.984 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 16 ms. Found 2 JPA repository interfaces.
+2024-09-19 21:08:40.987 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-09-19 21:08:40.987 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-09-19 21:08:40.991 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ram.repo.OrdersRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-09-19 21:08:40.991 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ram.repo.UserRepo; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-09-19 21:08:40.991 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 3 ms. Found 0 Redis repository interfaces.
+2024-09-19 21:08:41.097 WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [annotationActionEndpointMapping] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2024-09-19 21:08:41.099 INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2024-09-19 21:08:41.290 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 7890 (http)
+2024-09-19 21:08:41.291 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-7890"]
+2024-09-19 21:08:41.291 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-09-19 21:08:41.291 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.18]
+2024-09-19 21:08:41.325 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-09-19 21:08:41.325 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 919 ms
+2024-09-19 21:08:41.438 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-14 - Starting...
+2024-09-19 21:08:41.451 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-14 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2108168c
+2024-09-19 21:08:41.452 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-14 - Start completed.
+2024-09-19 21:08:41.452 INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/ram?createDatabaseIfNotExist=true'
+2024-09-19 21:08:41.677 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-19 21:08:41.740 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-19 21:08:42.030 DEBUG o.s.w.f.ServerHttpObservationFilter - Filter 'webMvcObservationFilter' configured for use
+2024-09-19 21:08:42.245 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-19 21:08:42.590 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 17 mappings in 'requestMappingHandlerMapping'
+2024-09-19 21:08:44.250 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2024-09-19 21:08:44.470 INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-09-19 21:08:44.745 INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@7cc41a25, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@61b7e312, org.springframework.security.web.context.SecurityContextHolderFilter@4eb8a0c8, org.springframework.security.web.header.HeaderWriterFilter@457b4458, org.springframework.web.filter.CorsFilter@8cd34d3, org.springframework.security.web.authentication.logout.LogoutFilter@3a5ebcd, com.ram.filter.JwtFilter@8e52bc6, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@67c2064b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@413ea923, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@69455d5f, org.springframework.security.web.session.SessionManagementFilter@3ca9b823, org.springframework.security.web.access.ExceptionTranslationFilter@53d02000, org.springframework.security.web.access.intercept.AuthorizationFilter@446b30a7]
+2024-09-19 21:08:45.093 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-09-19 21:08:45.117 DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-09-19 21:08:45.162 DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 2 @ExceptionHandler, 0 ResponseBodyAdvice
+2024-09-19 21:08:45.828 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-09-19 21:08:45.861 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-7890"]
+2024-09-19 21:08:45.865 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 7890 (http) with context path ''
+2024-09-19 21:08:45.876 INFO  com.ram.JavaRamApplication - Started JavaRamApplication in 5.504 seconds (process running for 1190.206)
+2024-09-19 21:08:45.879 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2024-09-19 21:09:08.778 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-09-19 21:09:08.780 INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-7890"]
+2024-09-19 21:09:08.786 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-19 21:09:08.788 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-14 - Shutdown initiated...
+2024-09-19 21:09:08.794 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-14 - Shutdown completed.
+2024-09-19 21:09:09.071 INFO  com.ram.JavaRamApplication - Starting JavaRamApplication using Java 21.0.1 with PID 10164 (N:\Pro\Menses\2024\Jan\eclipsE\JavaRam\target\classes started by NaveenWodeyar in N:\Pro\Menses\2024\Jan\eclipsE\JavaRam)
+2024-09-19 21:09:09.072 INFO  com.ram.JavaRamApplication - No active profile set, falling back to 1 default profile: "default"
+2024-09-19 21:09:09.619 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-09-19 21:09:09.619 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-19 21:09:09.636 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 16 ms. Found 2 JPA repository interfaces.
+2024-09-19 21:09:09.640 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-09-19 21:09:09.640 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-09-19 21:09:09.643 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ram.repo.OrdersRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-09-19 21:09:09.643 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ram.repo.UserRepo; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-09-19 21:09:09.644 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 3 ms. Found 0 Redis repository interfaces.
+2024-09-19 21:09:09.747 WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [annotationActionEndpointMapping] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2024-09-19 21:09:09.750 INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2024-09-19 21:09:09.949 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 7890 (http)
+2024-09-19 21:09:09.950 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-7890"]
+2024-09-19 21:09:09.950 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-09-19 21:09:09.950 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.18]
+2024-09-19 21:09:09.986 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-09-19 21:09:09.986 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 899 ms
+2024-09-19 21:09:10.114 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-15 - Starting...
+2024-09-19 21:09:10.137 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-15 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3a979eac
+2024-09-19 21:09:10.137 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-15 - Start completed.
+2024-09-19 21:09:10.138 INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/ram?createDatabaseIfNotExist=true'
+2024-09-19 21:09:10.451 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-19 21:09:10.590 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-19 21:09:10.793 DEBUG o.s.w.f.ServerHttpObservationFilter - Filter 'webMvcObservationFilter' configured for use
+2024-09-19 21:09:11.120 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-19 21:09:11.670 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 17 mappings in 'requestMappingHandlerMapping'
+2024-09-19 21:09:12.949 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2024-09-19 21:09:13.169 INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-09-19 21:09:13.279 INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@a2508d0, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@30c640f1, org.springframework.security.web.context.SecurityContextHolderFilter@3378daa6, org.springframework.security.web.header.HeaderWriterFilter@394f139e, org.springframework.web.filter.CorsFilter@307f2802, org.springframework.security.web.authentication.logout.LogoutFilter@21447d6b, com.ram.filter.JwtFilter@3a70c5ec, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7cfcdb97, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@d332bdc, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1d76ae15, org.springframework.security.web.session.SessionManagementFilter@31cae542, org.springframework.security.web.access.ExceptionTranslationFilter@2a9c59dc, org.springframework.security.web.access.intercept.AuthorizationFilter@4b1e38f5]
+2024-09-19 21:09:13.426 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-09-19 21:09:13.452 DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-09-19 21:09:13.491 DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 2 @ExceptionHandler, 0 ResponseBodyAdvice
+2024-09-19 21:09:14.312 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-09-19 21:09:14.346 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-7890"]
+2024-09-19 21:09:14.351 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 7890 (http) with context path ''
+2024-09-19 21:09:14.364 INFO  com.ram.JavaRamApplication - Started JavaRamApplication in 5.353 seconds (process running for 1218.694)
+2024-09-19 21:09:14.367 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2024-09-19 21:09:18.950 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-09-19 21:09:18.954 INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-7890"]
+2024-09-19 21:09:18.966 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-19 21:09:18.975 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-15 - Shutdown initiated...
+2024-09-19 21:09:18.983 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-15 - Shutdown completed.
+2024-09-19 21:09:19.210 INFO  com.ram.JavaRamApplication - Starting JavaRamApplication using Java 21.0.1 with PID 10164 (N:\Pro\Menses\2024\Jan\eclipsE\JavaRam\target\classes started by NaveenWodeyar in N:\Pro\Menses\2024\Jan\eclipsE\JavaRam)
+2024-09-19 21:09:19.211 INFO  com.ram.JavaRamApplication - No active profile set, falling back to 1 default profile: "default"
+2024-09-19 21:09:19.711 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-09-19 21:09:19.711 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-19 21:09:19.728 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 16 ms. Found 2 JPA repository interfaces.
+2024-09-19 21:09:19.731 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-09-19 21:09:19.732 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-09-19 21:09:19.735 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ram.repo.OrdersRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-09-19 21:09:19.735 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ram.repo.UserRepo; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-09-19 21:09:19.735 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 3 ms. Found 0 Redis repository interfaces.
+2024-09-19 21:09:19.844 WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [annotationActionEndpointMapping] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2024-09-19 21:09:19.847 INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2024-09-19 21:09:20.059 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 7890 (http)
+2024-09-19 21:09:20.060 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-7890"]
+2024-09-19 21:09:20.060 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-09-19 21:09:20.060 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.18]
+2024-09-19 21:09:20.099 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-09-19 21:09:20.100 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 887 ms
+2024-09-19 21:09:20.224 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-16 - Starting...
+2024-09-19 21:09:20.235 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-16 - Added connection com.mysql.cj.jdbc.ConnectionImpl@244f4a0d
+2024-09-19 21:09:20.235 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-16 - Start completed.
+2024-09-19 21:09:20.235 INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/ram?createDatabaseIfNotExist=true'
+2024-09-19 21:09:20.521 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-19 21:09:20.683 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-19 21:09:20.994 DEBUG o.s.w.f.ServerHttpObservationFilter - Filter 'webMvcObservationFilter' configured for use
+2024-09-19 21:09:21.204 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-19 21:09:21.543 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 17 mappings in 'requestMappingHandlerMapping'
+2024-09-19 21:09:22.824 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2024-09-19 21:09:23.056 INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-09-19 21:09:23.170 INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@4a5fbacd, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@53ff599b, org.springframework.security.web.context.SecurityContextHolderFilter@534471f0, org.springframework.security.web.header.HeaderWriterFilter@3a08a0de, org.springframework.web.filter.CorsFilter@331b6c50, org.springframework.security.web.authentication.logout.LogoutFilter@60808535, com.ram.filter.JwtFilter@3670fed, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7b05e19d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1270ce5f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@21838457, org.springframework.security.web.session.SessionManagementFilter@34c2f4ee, org.springframework.security.web.access.ExceptionTranslationFilter@3a131549, org.springframework.security.web.access.intercept.AuthorizationFilter@16356ce7]
+2024-09-19 21:09:23.302 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-09-19 21:09:23.330 DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-09-19 21:09:23.370 DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 2 @ExceptionHandler, 0 ResponseBodyAdvice
+2024-09-19 21:09:24.041 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-09-19 21:09:24.074 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-7890"]
+2024-09-19 21:09:24.078 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 7890 (http) with context path ''
+2024-09-19 21:09:24.090 INFO  com.ram.JavaRamApplication - Started JavaRamApplication in 4.923 seconds (process running for 1228.42)
+2024-09-19 21:09:24.095 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
