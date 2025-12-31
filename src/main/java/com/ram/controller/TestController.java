@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @author NaveenWodeyar
  * @date 20-Sept-2024
  */
+
 @RestController
 @RequestMapping("/v1")
 public class TestController {
@@ -19,6 +20,7 @@ public class TestController {
 	@GetMapping
 	public String test() {
 		log.info("test endpoint accessed,,");
+System.out.println("##############");
 		return "connected,,";
 	}
 }
