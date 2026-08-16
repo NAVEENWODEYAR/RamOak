@@ -38,7 +38,7 @@ public class UserController {
 	@GetMapping("/jwt")
 	@ResponseStatus(code = HttpStatus.OK)
 	public String greetMsg() {
-		return "Json Web Token,";
+		return "Json Web Token JWT authentication";
 	}
 
 	@PostMapping("/addUser")
