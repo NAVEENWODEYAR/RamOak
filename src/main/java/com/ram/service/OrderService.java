@@ -30,7 +30,6 @@ public class OrderService {
     public List<Orders> findAll() {
     System.out.println("fetchin data from db");
     
-    System.out.println("data is fetcing from database");
     
     	return orderRepository.findAll();
     }
