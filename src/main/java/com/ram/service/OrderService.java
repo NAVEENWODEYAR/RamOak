@@ -28,7 +28,7 @@ public class OrderService {
 
     @Cacheable("mycache")
     public List<Orders> findAll() {
-    System.out.println("fetchin data from db");
+    System.out.println("fetching data from db");
     
     
     	return orderRepository.findAll();
