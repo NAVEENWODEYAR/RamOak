@@ -26,13 +26,13 @@ public class UserService implements UserDetailsService {
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
         Optional<UserInfo> userInfo = userInfoRepository.findByUserName(username);
         return userInfo.map(UserInfoDetails::new)
-                .orElseThrow(()-> new UsernameNotFoundException("User record not found for name "+username));
+                .orElseThrow(()-> new UsernameNotFoundException("User record not found for the given name "+username));
     }
     
     public String addUser(UserInfo userInfo){
         userInfo.setUserPassword(passwordEncoder.encode(userInfo.getUserPassword()));
         userInfoRepository.save(userInfo);
-        return "User record added successfully";
+        return "User record added/persisted successfully";
     }
     
     public List<UserInfo> getAllUser(){
