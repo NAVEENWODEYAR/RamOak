@@ -19,7 +19,7 @@ public class TestController {
 
 	@GetMapping
 	public String test() {
-		log.info("test endpoint accessed,,");
+		log.info("Test endpoint accessed,,");
 System.out.println("\n##############/n");
 		return "connected,,";
 	}
