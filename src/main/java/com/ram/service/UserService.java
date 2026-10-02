@@ -26,7 +26,7 @@ public class UserService implements UserDetailsService {
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
         Optional<UserInfo> userInfo = userInfoRepository.findByUserName(username);
         return userInfo.map(UserInfoDetails::new)
-                .orElseThrow(()-> new UsernameNotFoundException("User record not found in the database for the given name "+username));
+                .orElseThrow(()-> new UsernameNotFoundException("User record not found in the database for the given userName "+username));
     }
     
     public String addUser(UserInfo userInfo){
